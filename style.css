@@ -1,14 +1,18 @@
 #container {
 	height: 100vh;
+	
 }
+
+
 .nav {
 	display: flex;
 	position: fixed;
 	font-weight: 500;
-	margin-left: 850px;
+	justify-content: flex-end;
 }
 a {
 	color: white;
+	display: flex;
 	justify-content: space-between;
 	margin-left: 60px;
 	padding-top: 30px;
@@ -25,9 +29,9 @@ a:hover {
 	font-size: 35px;
 	color: #031540;
 	font-weight: 600;
-	text-decoration: none;
-	padding: 20px;
-	margin-left: 15px;
+	
+
+	
 	z-index: 100;
 	display: flex;
 	position: fixed;
@@ -35,7 +39,7 @@ a:hover {
 .boxRight {
 	background-color: rgb(32, 32, 194);
 	height: 100vh;
-	width: 70%;
+	width: 60%;
 	margin-left: auto;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -71,37 +75,8 @@ button:hover {
 h1 {
 	font-style: italic;
 }
-.boxBG {
-	background-color: rgb(32, 32, 194);
-	height: 50%;
-	width: 25%;
-	margin-top: -470px;
-	margin-left: 290px;
-	border-radius: 50%;
-	padding: 20px;
-}
 
-.boxBG1 {
-	background-color: white;
-	height: 50%;
-	width: 25%;
-	margin-top: -368px;
-	margin-left: 300px;
-	border-radius: 50%;
-	padding: 10px;
-	position: sticky;
-}
-.boxBG2 {
-	background-image: url(logoGIT.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 50%;
-	width: 25%;
-	margin-top: -355px;
-	margin-left: 310px;
-	border-radius: 50%;
-	position: sticky;
-}
+
 .whele,
 .whele1,
 .whele2,
@@ -114,45 +89,33 @@ h1 {
 	border-radius: 50%;
 	border: 2px solid darkblue;
 	background: linear-gradient(to right, rgb(32, 32, 194), #00b3ff);
+	position:fixed;
 }
 
 .whele1 {
-	height: 150px;
-	width: 150px;
-	border-radius: 50%;
+	height: 200px;
+	width: 200px;
 	border: 2px solid darkblue;
-	display: flex;
-	margin-top: -500px;
-	margin-left: 190px;
-	position: fixed;
 }
 .whele {
-	position: fixed;
+	height: 200px;
+	width: 200px;
+	border: 2px solid darkblue;
 }
 .whele2 {
 	height: 200px;
 	width: 200px;
-	border-radius: 50%;
 	border: 2px solid darkblue;
-	margin-left: -100px;
-	margin-top: -650px;
-	display: flex;
 }
+	
 .whele3 {
-	display: flex;
-	height: 80px;
-	width: 80px;
-	border: 2px solid darkblue;
-	margin-top: 10px;
-	margin-left: 30px;
-}
-.whele4 {
-	display: fixed;
 	height: 200px;
 	width: 200px;
-	margin-top: 30px;
-	margin-left: -25px;
-	position: absolute;
+	border: 2px solid darkblue;
+}
+.whele4 {
+	border: 2px solid darkblue;
+	
 }
 .whele5 {
 	height: 200px;
@@ -160,7 +123,8 @@ h1 {
 	margin-left: 160px;
 	margin-top: 280px;
 	display: flex;
-	position: absolute;
+	position: fixed;
+	border: 2px solid darkblue;
 }
 .whele6 {
 	display: flex;
@@ -168,4 +132,5 @@ h1 {
 	width: 50px;
 	margin-left: 200px;
 	margin-top: 100px;
+	border: 2px solid darkblue;
 }
