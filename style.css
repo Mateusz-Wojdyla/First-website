@@ -2,13 +2,19 @@
 	height: 100vh;
 	
 }
-
+header{
+	display:flex;
+	border: solid 2px black;
+	height:6%;
+	justify-content: flex-end;
+padding-right:30px;
+}
 
 .nav {
 	display: flex;
 	position: fixed;
 	font-weight: 500;
-	justify-content: flex-end;
+	
 }
 a {
 	color: white;
@@ -38,11 +44,11 @@ a:hover {
 }
 .boxRight {
 	background-color: rgb(32, 32, 194);
-	height: 100vh;
+	height: 100%;
 	width: 60%;
 	margin-left: auto;
 	margin-right: 0px;
-	margin-top: 0px;
+	margin-top: -60px;
 	border-radius: 10px;
 	text-align: end;
 	justify-content: center;
