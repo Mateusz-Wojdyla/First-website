@@ -1,181 +1,176 @@
-*{
-	padding:0;
-	margin:0;
+* {
+	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 }
-body{
+body {
 	background-color: rgb(253, 253, 253);
 }
-.container{
-	height:auto;
+.container {
+	height: auto;
 	border: solid 2px black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background-color: rgb(78, 78, 40);
-	
 }
 
-.header{
-	height:6vh;
+.header {
+	height: 6vh;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-    padding-right:5%;
+	padding-right: 5%;
 	font-size: 1.5em;
 	font-weight: 500;
-
 }
 
 .nav {
-	padding-right:3%;
+	padding-right: 3%;
 	display: flex;
-	width:50vh;
+	width: 50vh;
 	justify-content: space-between;
 	z-index: 1;
-	
 }
-.nav a{
-	color:rgb(253, 252, 252);
+.nav a {
+	color: rgb(253, 252, 252);
 	transition: all 0.3s;
-	
 }
-.nav a:hover{
+.nav a:hover {
 	color: aqua;
-	cursor:pointer;
+	cursor: pointer;
 	transform: scale(1.2);
 }
 
-.logo{
+.logo {
 	display: flex;
-	margin-left:50px;
-	margin-right:auto;
+	margin-left: 50px;
+	margin-right: auto;
 	font-size: 2em;
 	font-weight: 700;
-	color:black;
-	padding-top:2em;
-
-	
+	color: black;
+	padding-top: 2em;
 }
 
-.boxRight{
-	height:100vh;
-	width:60%;
+.boxRight {
+	height: 100vh;
+	width: 60%;
 	margin-right: 0px;
-	margin-left:auto;
+	margin-left: auto;
 	background-color: rgb(1, 1, 129);
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	padding-right:5em;
+	padding-right: 5em;
 	position: relative;
 	text-shadow: 2px 2px 10px black;
-	margin-top:-3.5em;
-
+	margin-top: -3.5em;
 }
-.boxRight h1{
+.boxRight h1 {
 	font-size: 3em;
 	color: aquamarine;
-	padding-bottom:1em;
+	padding-bottom: 1em;
 }
 
-.boxRight p{
-	color:white;
-	font-size: 1.5em;;
+.boxRight p {
+	color: white;
+	font-size: 1.5em;
 }
-button{
-	height:4em;
+button {
+	height: 4em;
 	font-weight: 700;
-	width:13em;
+	width: 13em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius:1em;
-	border:none;
-	margin-left:10em;
+	border-radius: 1em;
+	border: none;
+	margin-left: 10em;
 	background-color: aqua;
-	transition:all 0.3s;
+	transition: all 0.3s;
 	box-shadow: 2px 2px 10px black;
-
 }
-button:hover{
-	opacity:70%;
-	cursor:pointer;
+button:hover {
+	opacity: 70%;
+	cursor: pointer;
 	transform: scale(1.1);
 }
 
-.icon-socialmedia{
-	
+.icon-socialmedia {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	height:3em;
-	width:15em;
-	position:absolute;
-	display:flex;
-	margin-top:22em;
-	margin-right:5em;
+	height: 3em;
+	width: 15em;
+	position: absolute;
+	display: flex;
+	margin-top: 22em;
+	margin-right: 5em;
 }
-.Icon{
-	
-	width:7em;
-	height:3em;
+.Icon {
+	width: 7em;
+	height: 3em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 2.5em;
-	
-	
-	
 }
-.Icon :hover{
-	cursor:pointer;
+.Icon :hover {
+	cursor: pointer;
 	transform: scale(1.1);
-	text-shadow:2em;
+	text-shadow: 2em;
 }
-
-	
-
 
 @media screen and (max-width: 400px) {
-    .header {
-        padding: 0.5em; /* Przykładowa zmiana marginesu dla mniejszych ekranów */
-    }
+	.header {
+		padding: 0.5em; /* Przykładowa zmiana marginesu dla mniejszych ekranów */
+	}
 
-    .logo {
-        font-size:none; /* Przykładowa zmiana rozmiaru czcionki dla mniejszych ekranów */
-    }
+	.logo {
+		font-size: none; /* Przykładowa zmiana rozmiaru czcionki dla mniejszych ekranów */
+	}
 
-    .boxRight {
-        width: 100%;
+	.boxRight {
+		width: 100%;
 		position: relative;
-    }
+	}
 	.boxRight h1 {
 		display: flex;
 		justify-content: flex-end;
 		font-size: 2em;
 	}
-	.text{
+	.text {
 		display: flex;
 		flex-direction: column;
-		margin-right:1em;
-		margin-left:auto;
+		margin-right: 1em;
+		margin-left: auto;
 	}
-	
 }
 
+@media screen and (max-width: 1000px) {
+	.header {
+		padding-top: 1.5em; /* Przykładowa zmiana marginesu dla mniejszych ekranów */
+	}
 
-@media screen and (max-width: 600px) {
-    .header {
-        padding: 0.5em; /* Przykładowa zmiana marginesu dla mniejszych ekranów */
-    }
+	.logo {
+		font-size: 1.5em; 
+		z-index:1;
+		color:white;
+		padding-top:.5em;/* Przykładowa zmiana rozmiaru czcionki dla mniejszych ekranów */
+	}
 
-    .logo {
-        font-size: 1.5em; /* Przykładowa zmiana rozmiaru czcionki dla mniejszych ekranów */
-    }
-
-    .boxRight {
-        width: 100%; /* Przykładowa zmiana szerokości dla mniejszych ekranów */
-    }
+	.boxRight {
+		width: 100%; /* Przykładowa zmiana szerokości dla mniejszych ekranów */
+	}
+	button{
+		margin-top:10em;
+		margin-left:25em;
+	}
+	.icon-socialmedia{
+		margin-right:17em;
+		margin-left:auto;
+		margin-bottom:2em;
+		position:absolute;
+	}
 }
